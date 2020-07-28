@@ -20,7 +20,7 @@ password="${key:32:32}"
 sudo apt-get update
 sudo apt-get -y install docker.io docker-compose
 echo "$password" | docker login -u "$username" --password-stdin registry.everytrade.io
-curl "https://raw.githubusercontent.com/rpanak-generalbytes/everytrade-install/e20d7874411090400207d8dacca8da407939ad16/docker-compose.yml" -o "$dockerComposeFile"
+curl "https://raw.githubusercontent.com/rpanak-generalbytes/everytrade-install/c1eb8965a9ecb5fb206f8f8e6911bfc0d89de5fd/docker-compose.yml" -o "$dockerComposeFile"
 sha256sum "$dockerComposeFile" | grep "$dockerComposeFileSha256"
 sudo docker-compose pull
 sudo docker-compose up -d
