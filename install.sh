@@ -8,7 +8,7 @@ if [[ ! "$key" =~ ^[0-9a-zA-Z]{64}$ ]]; then
 fi
 
 dockerComposeFile="docker-compose.yml"
-dockerComposeFileSha256="3a9c560dbd60c3431a3f7b5b39c7d04a667eb0338ee56956d060e684e4ae5a12"
+dockerComposeFileSha256="52a131107cb93e20491566277514d8bce017b807ca0ba27ebfeef54a68fbf1eb"
 if [[ -f "$dockerComposeFile" ]]; then
     >&2 echo "$dockerComposeFile already exists."
     exit 2
